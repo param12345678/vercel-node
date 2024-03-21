@@ -8,8 +8,9 @@ app.use(express.json());
 
 // Routes
 app.use("/home", home);
-app.get("/",(req,res)=>{
-  res.send("api is working find"})
+app.get("/", (req, res) => {
+  res.send("api is working find")
+})
 
 // connection
 const port = process.env.PORT || 9001;
